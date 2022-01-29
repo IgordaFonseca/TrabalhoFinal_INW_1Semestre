@@ -1,2 +1,2 @@
-# Trabalho final de INW do primeiro semestre
+# Trabalho final de INW, primeiro semestre
  
