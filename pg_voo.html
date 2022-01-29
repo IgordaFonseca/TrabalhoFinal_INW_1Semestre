@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Meta charset="utf-8">
+        <title>Página de voos</title>
+    </head>
+    <style>
+        body{
+                background-image: url("imagens/flat-lay-yellow-luggage-with-copy-space.jpg");
+                background-size: cover;
+            }
+            header{
+                text-align: center;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                float: left;
+                width: 100px;
+                margin-right: 50px;
+            }
+            figure{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .img{
+                width: 40px;
+                height: 40px;
+            }
+            form{
+                position: relative;
+                float: right;
+                clear: both;
+            }
+            fieldset{
+                margin-top: 30px;
+                width: 1300px;
+                border:none;
+            }
+            #tituloFilder{
+                text-align: center;
+            }
+            h1{
+                background-color: rgb(32, 178, 170, 0.3);
+                padding: 20px;  
+                font-family: 'Courier New', Courier, monospace;
+            }
+    </style>
+    <budy>
+        <header>
+            <h1>Cadastro de Voos</h1>
+        </header>
+        <nav>
+            <figure>
+                <img src="imagens/hut.png" class="img"></br>
+                <a href="pg_principal.html" >Página inicial </a>
+            </figure>
+            <figure>
+                <img src="imagens/luggage.png" class="img"></br>
+                <a href="pg_viagens.html">Página de viagens</a>
+            </figure>
+            <figure>
+                <img src="imagens/pilot.png" class="img"></br>
+                <a href="pg_piloto.html">Página de pilotos</a>
+            </figure>
+            <figure>
+                <img src="imagens/documents.png" class="img"></br>
+                <a href="pg_relatorios.html">Página de relatórios</a>
+            </figure>
+        </nav>
+        
+        <forms>
+            <fieldset>
+                <h1 id="tituloFilder">Incluir dados dos voos</h1> <br><br>
+                <label for="voo">Numero do voo</label> 
+                <input type="nunber" id="voo">                                
+                <label for="origem">Partida</label>     
+                <input type="text" id="origem">                               
+                         
+                <label for="chegada">Destino</label>    
+                <input type="text" id="chegada"><br><br><br><br>
+                <label for="distancia">Distancia</label>          
+                <input type="nunber" id="distancia">
+                                           
+                <label for="media"> Tempo médio</label>
+                <input type="media" id="media">                                          
+                <label for="aeronaves">Aeronave</label>
+                <input type="aeronaves" id="aeronaves"><br> <br><br><br>
+                <label for="escalas">Escalas</label>             
+                <input type="escalas" id="escalas">                                                                  
+                <input type ="submit" value="Cadastrar">
+            </fieldset>
+            <br><br>
+            <label for="filtro">Filtro de busca voos</label>    
+            <select id="Voos">
+                <option value="voo1">35128</option>
+                <option value="voo2">54256</option>
+            </select>      
+            <input type = "button" value="Alterar">      
+            <input type = "button" value="Excluir">      
+            <input type = "button" value="Listar Voos">      
+            <input type = "button" value="Listar todos os Voos">      
+        </forms> 
+        <br><br>
+        <style>table, th,td{border:1px solid black } </style>
+        <table >
+            <tr>
+                <th>Voo    </th>
+                <th>Partida</th>
+                <th>Chegada</th>
+                <th>Distancia</th>
+                <th>Tempo estimado</th>
+                <th>Aeronave</th>
+                <th>Escalas</th>
+            </tr>
+            <tr>
+                <td>35128</td>
+                <td>São Paulo SP</td>
+                <td>Belo Horizonte MG </td>
+                <td>602,31 km</td>
+                <td>1:05 Hrs </td>
+                <td>Embraer E-190</td>
+                <td>Voo direto</td>
+            </tr>
+            <tr>
+                <td>54256</td>
+                <td>Porto Alegre RS</td>
+                <td>Salvador BA</td>
+                <td>2307,11 km</td>
+                <td>4:25 Hrs</td>
+                <td>Boeing 737-700</td>
+                <td>São Paulo SP</td>
+            </tr>
+        </table>
+    
+
+    </budy>
+</html>

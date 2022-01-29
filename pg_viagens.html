@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Meta charset="utf-8">
+        <title>Página Viagens</title>
+        <style>
+            body{
+                background-image: url("imagens/flat-lay-yellow-luggage-with-copy-space.jpg");
+                background-size: cover;
+            }
+            header{
+                text-align: center;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                float: left;
+                width: 100px;
+                margin-right: 50px;
+            }
+            figure{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .img{
+                width: 40px;
+                height: 40px;
+            }
+            form{
+                position: relative;
+                float: right;
+                clear: both;
+            }
+            fieldset{
+                margin-top: 30px;
+                width: 1000px;
+                border:none;
+            }
+            #tituloFilder{
+                text-align: center;
+            }
+            h1{
+                background-color: rgb(32, 178, 170, 0.3);
+                padding: 20px;  
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Viagens</h1>
+        </header>
+        <nav>
+            <figure>
+                <img src="imagens/hut.png" class="img"></br>
+                <a href="pg_principal.html" >Página inicial </a>
+            </figure>
+            <figure>
+                <img src="imagens/aeroplane.png" class="img"></br>
+                <a href="pg_voo.html">Página de voos</a>
+            </figure>
+            <figure>
+                <img src="imagens/pilot.png" class="img"></br>
+                <a href="pg_piloto.html">Página de pilotos</a>
+            </figure>
+            <figure>
+                <img src="imagens/documents.png" class="img"></br>
+                <a href="pg_relatorios.html">Página de relatórios</a>
+            </figure>
+        </nav>
+        <forms>
+            <fieldset>
+                <h1 id="tituloFilder">Incluir dados da Viagem</h1> <br><br>
+                <label for="nvoo">Número do Voo</label> 
+                <input type="nunber" id="nvoo">                     
+                <label for="piloto">Piloto</label> 
+                <input type="text" id="piloto"><br><br><br><br>
+                <label for="dataSaida">Data da Saída</label>
+                <input type="date" id="dataSaida">
+                <label for="horaSaida">Hora da Saída</label>  
+                <input type="time" id="horaSaida">        
+                <label for="dataChegada">Data da Chegada</label>
+                <input type="date" id="dataChegada">
+                <label for="horaChegada">Hora da Chegada</label>  
+                <input type="time" id="horaChegada"><br><br><br><br>
+                <label for="ocorrencia">Ocorrência</label>
+                <input type=text id="ocorrencia">
+                <label for="funcao">Função do Piloto</label>
+                <input type="text" id="funcao">                                                                                                                
+                <input type ="submit" value="Cadastrar">
+            </fieldset>
+            <br><br>
+            <label for="filtro">Filtro do Registro de Viagens</label>
+            <select id="filtro">
+                <option value="nvoo1">Voo Número 1</option>
+                <option value="nvoo2">Voo Número 2</option>
+            </select>
+            <input type = "button" value="Alterar">
+            <input type = "button" value="Excluir">
+            <br><br>
+            <input type = "button" value="Listar Viagens">
+            <input type = "button" value="Listar Todas as Viagens">
+        </forms> 
+        <br><br>
+        <style>table, th,td{border:1px solid black } </style>
+        <table >
+            <tr>
+                <th>Número do Voo</th>
+                <th>Piloto</th>
+                <th>Data da Saída</th>
+                <th>Hora da Saída</th>
+                <th>Data da Chegada</th>
+                <th>Hora da Chegada</th>
+                <th>Ocorrência</th>
+                <th>Função do Piloto</th>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>João das Neves</td>
+                <td>10/08/2021</td>
+                <td>08:20</td>
+                <td>10/08/2021</td>
+                <td>20:55</td>
+                <td>Pouso Normal</td>
+                <td>Comandante</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Maria Joaquina</td>
+                <td>05/02/2021</td>
+                <td>20:30</td>
+                <td>06/02/2021</td>
+                <td>03:20</td>
+                <td>Arremeteu</td>
+                <td>Copiloto</td>
+            </tr>
+        </table>
+    
+      
+    </body>
+</html>
